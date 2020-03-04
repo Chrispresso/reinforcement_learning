@@ -11,8 +11,8 @@ from typing import List, Dict, Any, Optional, Tuple
 from .experience_replay import ExperienceReplayBuffer, Experience
 
 params: Dict[str, Any] = {
-    'replay_buffer_size': 10000,
-    'batch_size': 32,
+    'replay_buffer_size': 50000,
+    'batch_size': 64,
     'discount': .99,
     'optimizer': optim.Adam,
     'optimizer_kwargs': {},
